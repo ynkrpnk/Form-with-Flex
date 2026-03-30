@@ -1,12 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <h1>CREATE AN ACCOUNT</h1>
+        <p>We always keep your name and email address private.</p>
+      </header>
+
+      <form class="form-container">
+        <div class="input-wrapper">
+          <div class="input-container">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Display Name" />
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="Last name" />
+            <input type="email" placeholder="Email Address" />
+            <input type="password" placeholder="Password Confirmation" />
+          </div>
+          
+        </div>
+
+        <div class="radio-container">
+          <label class="radio-outer">
+            <input type="radio" name="role" checked />
+            <span class="radio-inner">
+              <strong class="radio-title">Join As a Buyer</strong>
+              <span class="radio-text"
+                >I am looking for a Name, Logo or Tagline for my business, brand
+                or product.</span
+              >
+            </span>
+          </label>
+
+          <label class="radio-outer">
+            <input type="radio" name="role" />
+            <span class="radio-inner">
+              <strong class="radio-title"
+                >Join As a Creative or Marketplace Seller</strong
+              >
+              <span class="radio-text"
+                >I plan to submit name ideas, Logo designs or sell names in
+                Domain Marketplace.</span
+              >
+            </span>
+          </label>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="marketing" />
+          <label for="marketing"
+            >Allow Squadhelp to send marketing/promotional offers from time to
+            time</label
+          >
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Create account</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
