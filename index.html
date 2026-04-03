@@ -25,33 +25,36 @@
             <input type="email" placeholder="Email Address" />
             <input type="password" placeholder="Password Confirmation" />
           </div>
-          
         </div>
 
         <div class="radio-container">
-          <label class="radio-outer">
-            <input type="radio" name="role" checked />
-            <span class="radio-inner">
-              <strong class="radio-title">Join As a Buyer</strong>
-              <span class="radio-text"
-                >I am looking for a Name, Logo or Tagline for my business, brand
-                or product.</span
-              >
-            </span>
-          </label>
+          <div class="radio-group">
+            <input type="radio" name="role" id="role-buyer" checked />
+            <label class="radio-outer" for="role-buyer">
+              <span class="radio-inner">
+                <span class="radio-title">Join As a Buyer</span>
+                <span class="radio-text">
+                  I am looking for a Name, Logo or Tagline for my business,
+                  brand or product.
+                </span>
+              </span>
+            </label>
+          </div>
 
-          <label class="radio-outer">
-            <input type="radio" name="role" />
-            <span class="radio-inner">
-              <strong class="radio-title"
-                >Join As a Creative or Marketplace Seller</strong
-              >
-              <span class="radio-text"
-                >I plan to submit name ideas, Logo designs or sell names in
-                Domain Marketplace.</span
-              >
-            </span>
-          </label>
+          <div class="radio-group">
+            <input type="radio" name="role" id="role-creative" />
+            <label class="radio-outer" for="role-creative">
+              <span class="radio-inner">
+                <span class="radio-title"
+                  >Join As a Creative or Marketplace Seller</span
+                >
+                <span class="radio-text">
+                  I plan to submit name ideas, Logo designs or sell names in
+                  Domain Marketplace.
+                </span>
+              </span>
+            </label>
+          </div>
         </div>
 
         <div class="checkbox-container">
